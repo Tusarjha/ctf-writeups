@@ -1,0 +1,26 @@
+#Obedient Cat — picoCTF
+
+**Category:** General Skills  
+**Difficulty:** Easy  
+**Points:** 100
+
+## Problem
+A file called `flag` has the flag hidden in plain sight ("in-the-clear").
+
+## Solution
+Downloaded the file using wget, then read it directly using cat:
+
+```bash
+wget [flag file URL]
+cat flag
+```
+
+The flag was directly visible in the file output.
+
+## Flag
+Not recorded — will update after re-solving
+
+## What I learned
+- `cat` command reads and displays file contents directly in terminal
+- "In-the-clear" means data is stored unencrypted and readable
+- `wget` downloads files from internet in Linux
