@@ -27,7 +27,7 @@ ROT13 was applied. Reversed using:
 `tr 'A-Za-z' 'N-ZA-Mn-za-m'`
 
 ## Flag
-`picoCTF{your_flag_here}`
+Not recorded
 
 ## What I learned
 - How Base64 encoding/decoding works
