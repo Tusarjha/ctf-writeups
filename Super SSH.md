@@ -1,30 +1,25 @@
-# Secure Shell — picoCTF
-# Category: General Skills
-# Difficulty: Easy
+# Secure Shell (SSH) — picoCTF
 
-# Challenge Description
-Connect to a remote server using SSH with a provided username, password, and port number to retrieve the flag.
+**Category:** General Skills  
+**Difficulty:** Easy  
+**Points:** 100
 
-# My Approach
-Step 1 - Launch the Instance
-Clicked Launch Instance on the challenge page and noted the credentials — hostname, port, username, and password.
-Step 2 - Connect via SSH
-Used the user@host format with -p to specify the non-default port:
+## Problem
+Connect to a remote server using SSH as user `ctf-player` 
+on a specific port to retrieve the flag.
 
-ssh ctf-player@titan.picoctf.net -p <port>
-Step 3 - Enter the Password
-When prompted, typed the password. The input stayed invisible — that's normal shell behavior for passwords.
-Step 4 - Retrieve the Flag
-The flag was either printed automatically on login or read from a file using:
+## Solution
+Launched the instance to get connection details, then ran:
 
-cat flag.txt
+```bash
+ssh ctf-player@titan.picoctf.net -p 58229
+```
+Accepted the fingerprint by typing `yes`.
+Entered password `1db87a14` when prompted.
+Flag appeared directly in the terminal.
 
-# Flag
-Not recorded
-
-# What I learned
-
-How to connect to a remote machine using SSH
-Using -p flag to specify a custom port
-Passwords typed in a shell are hidden but still being registered
-Basic user@hostname syntax for remote login
+## What I learned
+- SSH (Secure Shell) is used to remotely access computers securely
+- `-p` flag specifies a custom port
+- Passwords are hidden while typing in terminal — that's normal
+- SSH runs on port 22 by default but can use any port
