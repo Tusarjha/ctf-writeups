@@ -1,0 +1,25 @@
+PW Crack 1 Writeup
+Description
+
+The challenge provides a Python password checker (level1.py) and an encrypted flag file. The goal is to find the correct password and decrypt the flag.
+
+Solution
+
+Download the challenge files:
+
+wget <level1.py URL>
+wget <level1.flag.txt.enc URL>
+
+View the source code:
+
+cat level1.py
+Inspect the script and locate the hardcoded password. The challenge hint indicates that the str_xor function does not need to be analyzed.
+
+Run the script:
+
+python3 level1.py
+Enter the password found in the source code.
+The script decrypts the encrypted flag and prints the flag.
+Key Concept
+
+Many beginner password-cracking challenges store secrets directly in the source code. Before attempting to reverse engineer complex functions, inspect the program logic and look for hardcoded credentials.
