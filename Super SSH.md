@@ -8,7 +8,8 @@ Connect to a remote server at titan.picoctf.net using SSH with a given username,
 
 # How I solved it
 Launched the instance, noted the credentials, then ran:
-bashssh ctf-player@titan.picoctf.net -p 58229
+bash
+'ssh ctf-player@titan.picoctf.net -p 58229'
 Entered the password when prompted (hidden input) and the flag was printed on login.
 
 # Flag
