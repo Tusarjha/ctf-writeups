@@ -1,0 +1,25 @@
+Description: The challenge provides a Python script (ende.py), an encrypted file (pole.txt), and a password file. The goal is to use the script to decrypt the file and obtain the flag.
+
+Solution:
+
+Download all provided files using wget.
+
+Check the script usage:
+
+python3 ende.py -h
+
+The help message shows that files can be decrypted using:
+
+python3 ende.py -d [file]
+
+Decrypt the encrypted file:
+
+python3 ende.py -d pole.txt
+
+When prompted for a password, view the contents of password.txt:
+
+cat password.txt
+Enter the password into the script.
+The script decrypts the file and prints the flag.
+
+Key Concept: Understanding command-line arguments and using a Python script to decrypt a file with a provided password.
